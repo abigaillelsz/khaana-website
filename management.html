@@ -23,10 +23,6 @@
             color: darkgoldenrod;
             font-size: 18px;
         }
-        h4 {
-            color: goldenrod;
-            font-size: 16px;
-        }
         p {
             font-size: 16px;
         }
@@ -39,18 +35,18 @@
             font-weight: bold;
         }
         .team-member {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         img {
             width: 200px;
             border-radius: 12px;
+            display: block;  /* Forces image on its own line */
             margin-top: 10px;
+            margin-bottom: 5px;
         }
-        ul {
-            list-style-type: square;
-        }
-        ol {
-            list-style-type: decimal;
+        .direct-report {
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
         footer {
             margin-top: 40px;
@@ -83,38 +79,31 @@
     <h2>2. Brian Jones – <span class="emphasis">Chief Technology Officer</span></h2>
     <img src="cto.jpg" alt="Brian Jones – Chief Technology Officer">
     <p>Brian drives Khaana’s <i>technology innovations</i>, overseeing our ordering platform and delivery optimization.</p>
-    <ul>
-        <li>Leads software development and IT infrastructure</li>
-        <li>Ensures secure, reliable digital systems</li>
-    </ul>
 
-    <!-- IT Security Manager -->
-    <h3>Callie Hekter – IT Security Manager</h3>
-    <img src="itsecurity.jpg" alt="Callie Hekter – IT Security Manager">
-    <ul>
-        <li>Monitors network security and prevents cyber threats</li>
-        <li>Conducts security audits and staff training</li>
-        <li>Direct Reports:
-            <ul>
-                <li><img src="network.jpg" alt="Cody Weinman – Network Security Specialist" width="150"> Cody Weinman - Network Security Specialist</li>
-                <li><img src="compliance.jpg" alt="Lauren Daniels – Compliance & Risk Analyst" width="150"> Lauren Daniels - Compliance & Risk Analyst</li>
-            </ul>
+    <!-- Ordered List Example for Direct Reports -->
+    <ol>
+        <!-- IT Security Manager -->
+        <li>
+            <h3>Callie Hekter – IT Security Manager</h3>
+            <img src="itsecurity.jpg" alt="Callie Hekter – IT Security Manager">
+            <p class="direct-report">Direct Reports:</p>
+            <img src="network.jpg" alt="Cody Weinman – Network Security Specialist">
+            <p>Cody Weinman - Network Security Specialist</p>
+            <img src="compliance.jpg" alt="Lauren Daniels – Compliance & Risk Analyst">
+            <p>Lauren Daniels - Compliance & Risk Analyst</p>
         </li>
-    </ul>
 
-    <!-- Software Development Manager -->
-    <h3>Sydney Arias – Software Development Manager</h3>
-    <img src="softwaredev.jpg" alt="Sydney Arias – Software Development Manager">
-    <ul>
-        <li>Oversees app and web development</li>
-        <li>Implements new features for customer experience</li>
-        <li>Direct Reports:
-            <ul>
-                <li><img src="frontend.jpg" alt="Emily Miller – Front-End Developer" width="150"> Emily Miller - Front-End Developer</li>
-                <li><img src="backend.jpg" alt="Ja'Kaila Clay – Back-End Developer" width="150"> Ja'Kaila Clay - Back-End Developer</li>
-            </ul>
+        <!-- Software Development Manager -->
+        <li>
+            <h3>Sydney Arias – Software Development Manager</h3>
+            <img src="softwaredev.jpg" alt="Sydney Arias – Software Development Manager">
+            <p class="direct-report">Direct Reports:</p>
+            <img src="frontend.jpg" alt="Emily Miller – Front-End Developer">
+            <p>Emily Miller - Front-End Developer</p>
+            <img src="backend.jpg" alt="Ja'Kaila Clay – Back-End Developer">
+            <p>Ja'Kaila Clay - Back-End Developer</p>
         </li>
-    </ul>
+    </ol>
 </div>
 
 <!-- Head of Operations -->
@@ -122,6 +111,8 @@
     <h2>3. Jennifer Brown – <span class="emphasis">Head of Operations</span></h2>
     <img src="operations.jpg" alt="Jennifer Brown – Head of Operations">
     <p>Jennifer ensures Khaana’s daily operations run smoothly, focusing on logistics, kitchen management, and delivery efficiency.</p>
+
+    <!-- Unordered List Example -->
     <ul>
         <li>Manages logistics, kitchen staff, and quality assurance</li>
         <li>Oversees scheduling, food preparation, and packaging</li>
@@ -130,45 +121,31 @@
     <!-- Logistics Manager -->
     <h3>Brooke Young – Logistics Manager</h3>
     <img src="logistics.jpg" alt="Brooke Young – Logistics Manager">
-    <ul>
-        <li>Manages delivery routes and drivers</li>
-        <li>Maintains fleet and schedules</li>
-        <li>Direct Reports:
-            <ul>
-                <li><img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor" width="150"> Kristin Bahr - Delivery Supervisor</li>
-                <li><img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator" width="150"> Daniel Anton - Fleet Coordinator</li>
-                <li><img src="route.jpg" alt="Ryan James – Route Planner" width="150"> Ryan James - Route Planner</li>
-            </ul>
-        </li>
-    </ul>
+    <p class="direct-report">Direct Reports:</p>
+    <img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor">
+    <p>Kristin Bahr - Delivery Supervisor</p>
+    <img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator">
+    <p>Daniel Anton - Fleet Coordinator</p>
+    <img src="route.jpg" alt="Ryan James – Route Planner">
+    <p>Ryan James - Route Planner</p>
 
     <!-- Kitchen Manager -->
     <h3>Lance Alston – Kitchen Manager</h3>
     <img src="kitchen.jpg" alt="Lance Alston – Kitchen Manager">
-    <ul>
-        <li>Oversees meal preparation and staff training</li>
-        <li>Ensures food safety and quality standards</li>
-        <li>Direct Reports:
-            <ul>
-                <li><img src="chef.jpg" alt="Francesca Demorizi – Head Chef" width="150"> Francesca Demorizi - Head Chef</li>
-                <li><img src="prep.jpg" alt="Alexander Bull – Prep Supervisor" width="150"> Alexander Bull - Prep Supervisor</li>
-            </ul>
-        </li>
-    </ul>
+    <p class="direct-report">Direct Reports:</p>
+    <img src="chef.jpg" alt="Francesca Demorizi – Head Chef">
+    <p>Francesca Demorizi - Head Chef</p>
+    <img src="prep.jpg" alt="Alexander Bull – Prep Supervisor">
+    <p>Alexander Bull - Prep Supervisor</p>
 
     <!-- Quality Assurance Manager -->
     <h3>Colin Freeman – Quality Assurance Manager</h3>
     <img src="qamanager.jpg" alt="Colin Freeman – Quality Assurance Manager">
-    <ul>
-        <li>Monitors product and service quality</li>
-        <li>Implements process improvements and compliance checks</li>
-        <li>Direct Reports:
-            <ul>
-                <li><img src="qa.jpg" alt="Mollie Parker – QA Specialist" width="150"> Mollie Parker- QA Specialist</li>
-                <li><img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer" width="150"> Charlotte Mansur - Compliance Officer</li>
-            </ul>
-        </li>
-    </ul>
+    <p class="direct-report">Direct Reports:</p>
+    <img src="qa.jpg" alt="Mollie Parker – QA Specialist">
+    <p>Mollie Parker- QA Specialist</p>
+    <img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer">
+    <p>Charlotte Mansur - Compliance Officer</p>
 </div>
 
 <p>Want to learn more about our industry? Visit 
