@@ -45,20 +45,41 @@
             display: block;
             margin: 10px auto 5px auto;
         }
-        /* Manager-level images */
-        .manager-indent > img {
+        /* Manager-level sections */
+        .manager-indent {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .manager-info {
+            flex: 1 1 250px;
+        }
+        .manager-info img {
             width: 200px;
-            max-width: 60%;
+            max-width: 100%;
             border-radius: 12px;
             display: block;
             margin: 10px auto 5px auto;
         }
-    
+        .direct-reports-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            flex: 2 1 400px;
+        }
+        .direct-report {
+            background-color: #f2f2f2;
+            padding: 8px;
+            border-radius: 12px;
+            text-align: center;
+            width: 140px;
+        }
         .direct-report img {
             width: 120px;
+            border-radius: 12px;
             display: block;
-            margin-bottom: 3px;
-            border-radius: 12px; /* Makes direct report images rounded */
+            margin-bottom: 5px;
         }
         hr {
             border: 1px solid blue;
@@ -98,12 +119,14 @@
     <img src="cto.jpg" alt="Brian Jones – Chief Technology Officer">
     <p>Brian drives Khaana’s <i>technology innovations</i>, overseeing our ordering platform and delivery optimization. He ensures that our digital systems are secure, scalable, and provide a seamless experience for our customers.</p>
 
-    <!-- Ordered List Example for Managers -->
-    <ol class="manager-indent">
-        <li>
+    <!-- Managers and Direct Reports -->
+    <div class="manager-indent">
+        <div class="manager-info">
             <h3>Callie Hekter – IT Security Manager</h3>
             <img src="itsecurity.jpg" alt="Callie Hekter – IT Security Manager">
             <p>Callie leads our cybersecurity efforts, safeguarding company data and customer information while training staff on security best practices.</p>
+        </div>
+        <div class="direct-reports-container">
             <div class="direct-report">
                 <img src="network.jpg" alt="Cody Weinman – Network Security Specialist">
                 <p>Cody Weinman – Network Security Specialist</p>
@@ -112,12 +135,16 @@
                 <img src="compliance.jpg" alt="Lauren Daniels – Compliance & Risk Analyst">
                 <p>Lauren Daniels – Compliance & Risk Analyst</p>
             </div>
-        </li>
+        </div>
+    </div>
 
-        <li>
+    <div class="manager-indent">
+        <div class="manager-info">
             <h3>Sydney Arias – Software Development Manager</h3>
             <img src="softwaredev.jpg" alt="Sydney Arias – Software Development Manager">
             <p>Sydney oversees the development of Khaana’s website and app platforms, ensuring a seamless user experience and implementing new features that enhance customer engagement.</p>
+        </div>
+        <div class="direct-reports-container">
             <div class="direct-report">
                 <img src="frontend.jpg" alt="Emily Miller – Front-End Developer">
                 <p>Emily Miller – Front-End Developer</p>
@@ -126,8 +153,8 @@
                 <img src="backend.jpg" alt="Ja'Kaila Clay – Back-End Developer">
                 <p>Ja'Kaila Clay – Back-End Developer</p>
             </div>
-        </li>
-    </ol>
+        </div>
+    </div>
 </div>
 
 <hr>
@@ -143,44 +170,60 @@
     </ul>
 
     <div class="manager-indent">
-        <h3>Brooke Young – Logistics Manager</h3>
-        <img src="logistics.jpg" alt="Brooke Young – Logistics Manager">
-        <p>Brooke manages all delivery operations, ensuring routes are efficient and drivers are well-coordinated.</p>
-        <div class="direct-report">
-            <img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor">
-            <p>Kristin Bahr – Delivery Supervisor</p>
+        <div class="manager-info">
+            <h3>Brooke Young – Logistics Manager</h3>
+            <img src="logistics.jpg" alt="Brooke Young – Logistics Manager">
+            <p>Brooke manages all delivery operations, ensuring routes are efficient and drivers are well-coordinated.</p>
         </div>
-        <div class="direct-report">
-            <img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator">
-            <p>Daniel Anton – Fleet Coordinator</p>
+        <div class="direct-reports-container">
+            <div class="direct-report">
+                <img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor">
+                <p>Kristin Bahr – Delivery Supervisor</p>
+            </div>
+            <div class="direct-report">
+                <img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator">
+                <p>Daniel Anton – Fleet Coordinator</p>
+            </div>
+            <div class="direct-report">
+                <img src="route.jpg" alt="Ryan James – Route Planner">
+                <p>Ryan James – Route Planner</p>
+            </div>
         </div>
-        <div class="direct-report">
-            <img src="route.jpg" alt="Ryan James – Route Planner">
-            <p>Ryan James – Route Planner</p>
-        </div>
+    </div>
 
-        <h3>Lance Alston – Kitchen Manager</h3>
-        <img src="kitchen.jpg" alt="Lance Alston – Kitchen Manager">
-        <p>Lance leads the kitchen team to prepare meals efficiently and maintain high food quality standards, ensuring customer satisfaction.</p>
-        <div class="direct-report">
-            <img src="chef.jpg" alt="Francesca Demorizi – Head Chef">
-            <p>Francesca Demorizi – Head Chef</p>
+    <div class="manager-indent">
+        <div class="manager-info">
+            <h3>Lance Alston – Kitchen Manager</h3>
+            <img src="kitchen.jpg" alt="Lance Alston – Kitchen Manager">
+            <p>Lance leads the kitchen team to prepare meals efficiently and maintain high food quality standards, ensuring customer satisfaction.</p>
         </div>
-        <div class="direct-report">
-            <img src="prep.jpg" alt="Alexander Bull – Prep Supervisor">
-            <p>Alexander Bull – Prep Supervisor</p>
+        <div class="direct-reports-container">
+            <div class="direct-report">
+                <img src="chef.jpg" alt="Francesca Demorizi – Head Chef">
+                <p>Francesca Demorizi – Head Chef</p>
+            </div>
+            <div class="direct-report">
+                <img src="prep.jpg" alt="Alexander Bull – Prep Supervisor">
+                <p>Alexander Bull – Prep Supervisor</p>
+            </div>
         </div>
+    </div>
 
-        <h3>Colin Freeman – Quality Assurance Manager</h3>
-        <img src="qamanager.jpg" alt="Colin Freeman – Quality Assurance Manager">
-        <p>Colin ensures that all products and services meet our quality standards and continuously seeks ways to improve operations.</p>
-        <div class="direct-report">
-            <img src="qa.jpg" alt="Mollie Parker – QA Specialist">
-            <p>Mollie Parker – QA Specialist</p>
+    <div class="manager-indent">
+        <div class="manager-info">
+            <h3>Colin Freeman – Quality Assurance Manager</h3>
+            <img src="qamanager.jpg" alt="Colin Freeman – Quality Assurance Manager">
+            <p>Colin ensures that all products and services meet our quality standards and continuously seeks ways to improve operations.</p>
         </div>
-        <div class="direct-report">
-            <img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer">
-            <p>Charlotte Mansur – Compliance Officer</p>
+        <div class="direct-reports-container">
+            <div class="direct-report">
+                <img src="qa.jpg" alt="Mollie Parker – QA Specialist">
+                <p>Mollie Parker – QA Specialist</p>
+            </div>
+            <div class="direct-report">
+                <img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer">
+                <p>Charlotte Mansur – Compliance Officer</p>
+            </div>
         </div>
     </div>
 </div>
@@ -201,4 +244,5 @@
 
 </body>
 </html>
+
 
