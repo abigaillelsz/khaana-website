@@ -18,12 +18,10 @@
         h2 {
             color: darkgoldenrod;
             font-size: 22px;
-            margin-top: 40px;
         }
         h3 {
             color: darkgoldenrod;
             font-size: 18px;
-            margin-top: 30px;
         }
         p {
             font-size: 16px;
@@ -36,7 +34,7 @@
             color: goldenrod;
             font-weight: bold;
         }
-        .team-member, .manager {
+        .team-member {
             margin-bottom: 40px;
         }
         img {
@@ -46,20 +44,9 @@
             margin-top: 10px;
             margin-bottom: 5px;
         }
-        .direct-reports {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px; /* space between columns */
-            margin-left: 0;
-            margin-bottom: 20px;
-        }
         .direct-report {
-            width: 200px;
-            text-align: center;
-        }
-        .direct-report img {
-            width: 150px;
-            margin-bottom: 5px;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
         footer {
             margin-top: 40px;
@@ -67,9 +54,11 @@
             text-align: center;
             color: gray;
         }
-        hr {
-            margin: 50px 0;
-            border: 1px solid #ccc;
+        ul {
+            list-style-type: square;
+        }
+        ol {
+            list-style-type: decimal;
         }
     </style>
 </head>
@@ -83,7 +72,7 @@
 <div class="team-member">
     <h2>Jane Smith – <span class="emphasis">Chief Executive Officer</span></h2>
     <img src="ceo.jpg" alt="Jane Smith – Chief Executive Officer">
-    <p>Jane founded Khaana in 2020 to make <b>ready-to-eat meal delivery</b> accessible and affordable. She oversees company strategy, marketing, and finance. Her leadership style combines strategic foresight with hands-on engagement across all teams.</p>
+    <p>Jane founded Khaana in 2020 to make <b>ready-to-eat meal delivery</b> accessible and affordable. She oversees company strategy, marketing, and finance, ensuring that the organization grows sustainably while staying true to its mission. Jane collaborates closely with all department heads, mentoring emerging leaders and fostering a company culture that values innovation, integrity, and customer satisfaction. She maintains strategic relationships with key partners and suppliers to optimize operations and ensure the highest standards of quality and service.</p>
     <ul>
         <li>Over 20 years in hospitality and business management</li>
         <li>Leads partnerships with local suppliers</li>
@@ -91,109 +80,98 @@
     </ul>
 </div>
 
-<hr>
-
 <!-- CTO -->
 <div class="team-member">
     <h2>Brian Jones – <span class="emphasis">Chief Technology Officer</span></h2>
     <img src="cto.jpg" alt="Brian Jones – Chief Technology Officer">
-    <p>Brian drives Khaana’s <i>technology innovations</i>, overseeing our ordering platform and delivery optimization. His expertise ensures secure, reliable, and cutting-edge digital systems for both customers and employees.</p>
+    <p>Brian drives Khaana’s <i>technology innovations</i>, overseeing our ordering platform and delivery optimization. He is responsible for implementing advanced IT systems that ensure seamless digital experiences for both customers and staff. Brian leads software development, cybersecurity, and infrastructure teams, constantly seeking ways to improve efficiency and scalability. His expertise in emerging technologies allows Khaana to stay ahead of competitors and adopt solutions that enhance operational effectiveness, user experience, and data-driven decision-making.</p>
 
-    <!-- IT Security Manager -->
-    <div class="manager">
-        <h3>Callie Hekter – IT Security Manager</h3>
-        <img src="itsecurity.jpg" alt="Callie Hekter – IT Security Manager">
-        <p>Callie ensures the company’s digital infrastructure is secure, conducting audits and training staff to prevent cyber threats.</p>
+    <!-- Ordered List for Direct Reports -->
+    <ol>
+        <!-- IT Security Manager -->
+        <li>
+            <h3>Callie Hekter – IT Security Manager</h3>
+            <img src="itsecurity.jpg" alt="Callie Hekter – IT Security Manager">
+            <p>Callie ensures the company’s digital infrastructure is secure and resilient. She conducts regular audits, identifies potential vulnerabilities, and implements policies and training to prevent cyber threats. Callie works closely with software development and operations teams to maintain best practices in network security, compliance, and risk management. Her proactive approach helps protect company data and customer information while supporting the technology team’s innovative projects.</p>
 
-        <div class="direct-reports">
             <div class="direct-report">
                 <img src="network.jpg" alt="Cody Weinman – Network Security Specialist">
-                <p>Cody Weinman - Network Security Specialist</p>
-            </div>
-            <div class="direct-report">
+                <p>Cody Weinman - Network Security Specialist: Monitors the internal network for unusual activity, applies security patches, and assists in designing firewalls to prevent unauthorized access.</p>
+
                 <img src="compliance.jpg" alt="Lauren Daniels – Compliance & Risk Analyst">
-                <p>Lauren Daniels - Compliance & Risk Analyst</p>
+                <p>Lauren Daniels - Compliance & Risk Analyst: Conducts compliance audits, monitors IT regulations, and identifies potential operational risks. Works closely with Callie to enforce company security policies.</p>
             </div>
-        </div>
-    </div>
+        </li>
 
-    <!-- Software Development Manager -->
-    <div class="manager">
-        <h3>Sydney Arias – Software Development Manager</h3>
-        <img src="softwaredev.jpg" alt="Sydney Arias – Software Development Manager">
-        <p>Sydney leads the development of Khaana’s web and mobile applications, ensuring an intuitive and seamless user experience.</p>
+        <!-- Software Development Manager -->
+        <li>
+            <h3>Sydney Arias – Software Development Manager</h3>
+            <img src="softwaredev.jpg" alt="Sydney Arias – Software Development Manager">
+            <p>Sydney leads the development of Khaana’s web and mobile applications, focusing on user-friendly interfaces and reliable backend systems. She collaborates with designers, QA specialists, and other developers to deliver innovative features and seamless customer experiences. Sydney monitors emerging technologies, evaluates new tools, and mentors her team to maintain high coding standards and professional growth.</p>
 
-        <div class="direct-reports">
             <div class="direct-report">
                 <img src="frontend.jpg" alt="Emily Miller – Front-End Developer">
-                <p>Emily Miller - Front-End Developer</p>
-            </div>
-            <div class="direct-report">
-                <img src="backend.jpg" alt="Ja'Kaila Clay – Back-End Developer">
-                <p>Ja'Kaila Clay - Back-End Developer</p>
-            </div>
-        </div>
-    </div>
-</div>
+                <p>Emily Miller - Front-End Developer: Designs and implements website interfaces, ensuring optimal user experience and responsiveness across devices.</p>
 
-<hr>
+                <img src="backend.jpg" alt="Ja'Kaila Clay – Back-End Developer">
+                <p>Ja'Kaila Clay - Back-End Developer: Develops server-side logic, integrates databases, and ensures data security and efficient system performance.</p>
+            </div>
+        </li>
+    </ol>
+</div>
 
 <!-- Head of Operations -->
 <div class="team-member">
     <h2>Jennifer Brown – <span class="emphasis">Head of Operations</span></h2>
     <img src="operations.jpg" alt="Jennifer Brown – Head of Operations">
-    <p>Jennifer oversees Khaana’s daily operations, ensuring logistics, kitchen management, and delivery efficiency run smoothly. Her focus on process improvement keeps operations scalable and reliable.</p>
+    <p>Jennifer oversees Khaana’s daily operations, ensuring logistics, kitchen management, and delivery efficiency run smoothly. She develops and implements operational strategies, optimizing workflow and resource allocation. Jennifer focuses on continuous process improvement, quality control, and compliance with food safety standards. She leads cross-functional teams, coordinates schedules, and mentors staff to foster a culture of accountability, efficiency, and excellence. Her strategic insight ensures that Khaana’s operations remain scalable and customer-focused.</p>
 
-    <div class="manager">
-        <h3>Brooke Young – Logistics Manager</h3>
-        <img src="logistics.jpg" alt="Brooke Young – Logistics Manager">
-        <p>Brooke manages the delivery fleet, driver scheduling, and route planning to guarantee timely meal deliveries.</p>
-        <div class="direct-reports">
-            <div class="direct-report">
-                <img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor">
-                <p>Kristin Bahr - Delivery Supervisor</p>
-            </div>
-            <div class="direct-report">
-                <img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator">
-                <p>Daniel Anton - Fleet Coordinator</p>
-            </div>
-            <div class="direct-report">
-                <img src="route.jpg" alt="Ryan James – Route Planner">
-                <p>Ryan James - Route Planner</p>
-            </div>
-        </div>
+    <!-- Unordered List Example -->
+    <ul>
+        <li>Manages logistics, kitchen staff, and quality assurance</li>
+        <li>Oversees scheduling, food preparation, and packaging</li>
+    </ul>
+
+    <!-- Logistics Manager -->
+    <h3>Brooke Young – Logistics Manager</h3>
+    <img src="logistics.jpg" alt="Brooke Young – Logistics Manager">
+    <p>Brooke manages the delivery fleet, driver scheduling, and route planning to guarantee timely and accurate meal deliveries. She monitors fleet performance, implements efficiency measures, and ensures compliance with safety standards. Brooke collaborates with the operations head to align logistics strategy with overall business goals and mentors her team to maintain high service quality and operational reliability.</p>
+
+    <div class="direct-report">
+        <img src="delivery.jpg" alt="Kristin Bahr – Delivery Supervisor">
+        <p>Kristin Bahr - Delivery Supervisor: Oversees daily driver operations, monitors delivery timelines, and resolves any route challenges that arise.</p>
+
+        <img src="fleet.jpg" alt="Daniel Anton – Fleet Coordinator">
+        <p>Daniel Anton - Fleet Coordinator: Maintains company vehicles, schedules regular maintenance, and ensures all delivery vehicles are operational and compliant with safety standards.</p>
+
+        <img src="route.jpg" alt="Ryan James – Route Planner">
+        <p>Ryan James - Route Planner: Designs optimal delivery routes using data and traffic analytics to reduce delivery times and increase efficiency.</p>
     </div>
 
-    <div class="manager">
-        <h3>Lance Alston – Kitchen Manager</h3>
-        <img src="kitchen.jpg" alt="Lance Alston – Kitchen Manager">
-        <p>Lance supervises meal preparation, staff training, and ensures all kitchen operations meet food safety and quality standards.</p>
-        <div class="direct-reports">
-            <div class="direct-report">
-                <img src="chef.jpg" alt="Francesca Demorizi – Head Chef">
-                <p>Francesca Demorizi - Head Chef</p>
-            </div>
-            <div class="direct-report">
-                <img src="prep.jpg" alt="Alexander Bull – Prep Supervisor">
-                <p>Alexander Bull - Prep Supervisor</p>
-            </div>
-        </div>
+    <!-- Kitchen Manager -->
+    <h3>Lance Alston – Kitchen Manager</h3>
+    <img src="kitchen.jpg" alt="Lance Alston – Kitchen Manager">
+    <p>Lance supervises meal preparation, staff training, and kitchen operations, ensuring compliance with food safety regulations and quality standards. He develops workflows that maximize efficiency while maintaining consistency in taste and presentation. Lance works closely with the head chef, QA manager, and logistics team to coordinate meal production with delivery schedules. He fosters a positive work environment, mentoring kitchen staff and promoting professional development within his team.</p>
+
+    <div class="direct-report">
+        <img src="chef.jpg" alt="Francesca Demorizi – Head Chef">
+        <p>Francesca Demorizi - Head Chef: Leads the kitchen team in creating high-quality meals, develops recipes, and ensures food consistency and presentation meet company standards.</p>
+
+        <img src="prep.jpg" alt="Alexander Bull – Prep Supervisor">
+        <p>Alexander Bull - Prep Supervisor: Organizes and supervises prep work, manages ingredient inventory, and supports the head chef in meal assembly and quality checks.</p>
     </div>
 
-    <div class="manager">
-        <h3>Colin Freeman – Quality Assurance Manager</h3>
-        <img src="qamanager.jpg" alt="Colin Freeman – Quality Assurance Manager">
-        <p>Colin ensures all meals and services meet company quality standards, implementing process improvements and compliance checks.</p>
-        <div class="direct-reports">
-            <div class="direct-report">
-                <img src="qa.jpg" alt="Mollie Parker – QA Specialist">
-                <p>Mollie Parker- QA Specialist</p>
-            </div>
-            <div class="direct-report">
-                <img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer">
-                <p>Charlotte Mansur - Compliance Officer</p>
-            </div>
-        </div>
+    <!-- Quality Assurance Manager -->
+    <h3>Colin Freeman – Quality Assurance Manager</h3>
+    <img src="qamanager.jpg" alt="Colin Freeman – Quality Assurance Manager">
+    <p>Colin monitors product and service quality, implementing process improvements and compliance checks across all operations. He develops quality control protocols, trains staff on standards, and ensures that every meal leaving the kitchen meets Khaana’s rigorous expectations. Colin works closely with management and operations teams to address issues proactively, identify trends, and support continuous improvement initiatives.</p>
+
+    <div class="direct-report">
+        <img src="qa.jpg" alt="Mollie Parker – QA Specialist">
+        <p>Mollie Parker - QA Specialist: Performs detailed inspections of prepared meals, records findings, and assists in process adjustments to maintain quality and safety standards.</p>
+
+        <img src="compliance2.jpg" alt="Charlotte Mansur – Compliance Officer">
+        <p>Charlotte Mansur - Compliance Officer: Ensures all operations adhere to health, safety, and industry regulations. Provides staff training and documentation to maintain compliance.</p>
     </div>
 </div>
 
